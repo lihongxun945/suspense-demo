@@ -1,4 +1,5 @@
 // 简单mock，只支持一个请求
+// 重要提示：dev模式下会把错误显示出来，所以请在build模式下运行
 
 let result = undefined;
 
