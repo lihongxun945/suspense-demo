@@ -1,8 +1,7 @@
-import React, { Suspense, Component } from 'react';
+import React, { Component } from 'react';
 import Movie from './movie.js';
 import Spinner from '../Spinner.js';
-
-console.log(Suspense);
+import Suspense from './suspense.js';
 
 class List extends Component {
   render() {
@@ -11,9 +10,6 @@ class List extends Component {
         <h2>热门电影</h2>
         <Suspense maxDuration={1500} fallback={<Spinner />}>
           <Movie id={0} />
-          <Movie id={1} />
-          <Movie id={2} />
-          <Movie id={3} />
         </Suspense>
       </div>
     );
